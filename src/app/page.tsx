@@ -1,9 +1,14 @@
 import Image from 'next/image'
+import adriel from '../assets/adriel.png'
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-4'>
-      <h1 className='text-center font-bold text-xl'>Adriel Visagista</h1>
+    <main className='flex flex-col gap-4'>
+      <div className='flex flex-col gap-3 mt-4'>
+        <h1 className='text-center font-bold text-xl'>Adriel Visagista</h1>
+
+        <Image src={adriel} alt="Adriel" className='w-full rounded-md' />
+      </div>
 
       <div>
         <h1 className='text-lg font-bold '>O que é a analise visagista</h1>
@@ -51,6 +56,6 @@ export default function Home() {
 
 
 
-    </div>
+    </main>
   )
 }
